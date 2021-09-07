@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
+
+.about-container {
+  background-color: whitesmoke;
+  height: auto;
+  padding: 10vh 0vw;
+  font-family: "Nunito", sans-serif;
+}
+.about-title {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+.about-img-container {
+  display: grid;
+  grid-template-columns: 50vw auto;
+}
+.about-photo > img {
+  height: auto;
+  width: 50vw;
+}
+.about-description {
+  padding: 20vh 3vw;
+  text-align: center;
+  align-items: center;
+}
+.about-description > h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+}
+.about-description > p {
+  text-align: justify;
+  font-size: 14px;
+}
+.about-btn {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+}
+.icon-color {
+  color: #27ae60;
+  font-size: 1.2rem;
+}
+.about-btn > button {
+  padding: 3vh 2.5vw;
+  font-size: 0.9rem;
+  background-color: whitesmoke;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  margin: 2vh 0vw 3vh 0vw;
+  border-radius: 5px;
+}
+.about-learn-btn {
+  padding: 2vh 3vw;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #192a56;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: 1s;
+}
+.about-learn-btn:hover {
+  background-color: #27ae60;
+  letter-spacing: 0.1rem;
+}
+
+/* responsive code start*/
+/* For tablet */
+
+@media screen and (max-width: 768px) {
+  .about-img-container {
+    align-items: center;
+  }
+}
+/* For Mobile */
+
+@media screen and (max-width: 425px) {
+  .about-img-container {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+  }
+  .about-photo {
+    height: 50vh;
+    width: 100%;
+  }
+  .about-photo > img {
+    height: 55vh;
+    width: 100%;
+  }
+  .about-btn {
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+  }
+}

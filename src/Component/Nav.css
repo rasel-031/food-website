@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
+.App-nav {
+  margin: 0;
+  padding: 2vh 0vw;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: "Nunito", sans-serif;
+}
+.nav-icon {
+  color: #27ae60;
+  font-size: 1.9vw;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  padding-left: 7vw;
+}
+.nav-logo > h1 {
+  padding: 0;
+  margin: 0;
+  color: #192a56;
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 2vw;
+}
+.nav-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2vw;
+  text-align: center;
+}
+.nav-links > a {
+  text-decoration: none;
+  padding: 1vh;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.25vw;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+.nav-links > a:hover {
+  background-color: #27ae60;
+  color: white;
+  border-radius: 8%;
+}
+/* This is action */
+.active {
+  background-color: #27ae60;
+  color: white;
+}
+.not-active {
+  background-color: white;
+  color: black;
+}
+/* This is action */
+.nav-social {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1vw;
+  padding-right: 7vw;
+}
+.nav-social-btn {
+  padding: 2vh;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+.nav-social > button:hover {
+  background-color: #27ae60;
+  color: white;
+  transform: rotate(360deg);
+}
+.responsive-btn {
+  display: none;
+}
+.mobile-link {
+  display: none;
+}
+/* responsive code start*/
+/* For Mobile */
+
+@media screen and (max-width: 425px) {
+  .nav-logo > h1 {
+    font-size: 5vw;
+  }
+  .nav-icon {
+    font-size: 5vw;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-social {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2vw;
+    padding-right: 7vw;
+  }
+  .responsive-btn {
+    display: flex;
+    padding: 2vh;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .mobile-link {
+    margin-top: 11vh;
+    display: grid;
+    grid-template-rows: repeat(6, 6vh);
+    height: auto;
+    background-color: whitesmoke;
+    align-items: center;
+    padding: 1vh 5vw;
+    position: fixed;
+    width: 90%;
+  }
+  .mobile-link > a {
+    text-decoration: none;
+    padding: 1vh;
+    border: none;
+    cursor: pointer;
+    font-family: "Nunito Sans", sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    font-weight: 600;
+  }
+  .mobile-link > a:hover {
+    color: #27ae60;
+  }
+}

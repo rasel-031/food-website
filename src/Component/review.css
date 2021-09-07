@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
+.review-carousel {
+  background-color: rgb(255, 255, 255);
+  height: auto;
+  padding: 4vh;
+  border-radius: 5px;
+  border: 1px solid rgba(209, 205, 205, 0.815);
+}
+.review-title {
+  display: grid;
+  grid-template-columns: 6vw 1fr 4vw;
+}
+.review-name {
+  padding-top: 1.5vh;
+}
+.review-name > h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 1.5vw;
+}
+.review-name > h4 {
+  padding: 0;
+  margin: 0;
+  font-size: 1vw;
+}
+.review-title > img {
+  height: 11vh;
+  width: 5vw;
+  border-radius: 50%;
+  text-align: center;
+}
+.review-logo {
+  font-size: 8vh;
+  text-align: right;
+  color: rgba(209, 205, 205, 0.815);
+}
+.review-about > p {
+  text-align: justify;
+}
+
+/* For Mobile*/
+@media screen and (max-width: 425px) {
+  .review-title {
+    display: grid;
+    grid-template-columns: 14vw 1fr 12vw;
+  }
+  .review-title > img {
+    width: 100%;
+    height: 100%;
+  }
+  .review-name {
+    padding: 2vh 2vh;
+  }
+  .review-name > h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 3.5vw;
+  }
+  .review-name > h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 2.5vw;
+  }
+}

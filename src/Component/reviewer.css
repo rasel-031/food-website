@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
+.review {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2vw;
+  margin: 5vh 9vw;
+}
+.review-1 {
+  background-color: white;
+  padding: 10vh 0vw;
+}
+.review-1 > h1 {
+  text-align: center;
+  margin-top: -2vh;
+  color: #192a56;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+}
+.review-1 > h2 {
+  text-align: center;
+  color: #27ae60;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* For Mobile*/
+@media screen and (max-width: 425px) {
+  .review {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5vh;
+  }
+}

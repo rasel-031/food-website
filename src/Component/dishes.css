@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
+.dishes-container {
+  background-color: white;
+  height: auto;
+  font-family: "Nunito", sans-serif;
+  padding: 10vh 0vw;
+}
+.dishes-title {
+  text-align: center;
+}
+.dishes-title > h2 {
+  color: #27ae60;
+}
+.dishes-title > h1 {
+  margin-top: -2vh;
+  color: #192a56;
+}
+.dishes-cart-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.5vw;
+  margin: 0vh 9vw;
+}
+.cart-img {
+  height: 25vh;
+  width: auto;
+}
+.dishes-cart {
+  background-color: white;
+  text-align: center;
+  padding: 2vh 1vw;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.dishes-cart > h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  font-size: 1.7rem;
+  color: #192a56;
+}
+.cart-rating {
+  padding: 2vh 0vw;
+  color: #27ae60;
+}
+.cart-eye-btn {
+  text-align: right;
+}
+.dishes-logo {
+  display: flex;
+  justify-content: space-between;
+}
+.cart-eye-btn,
+.cart-heart-btn {
+  padding: 0.8vw;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.cart-eye-btn:hover,
+.cart-heart-btn:hover {
+  background-color: #27ae60;
+  color: white;
+}
+.cart-price {
+  display: flex;
+  justify-content: space-evenly;
+}
+.cart-price > span {
+  color: #27ae60;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+.cart-price > button {
+  padding: 1vh 2vw;
+  text-align: center;
+  border: 2px solid #192a56;
+  border-radius: 5px;
+  background-color: transparent;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  color: #192a56;
+  cursor: pointer;
+}
+
+.cart-price > button:hover {
+  background-color: #27ae60;
+  letter-spacing: 0.1rem;
+  color: white;
+  border: none;
+}
+
+/* responsive code start*/
+/* For Tablet*/
+
+@media screen and (max-width: 768px) {
+  .dishes-cart-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3vh;
+  }
+}
+
+/* For Mobile*/
+
+@media screen and (max-width: 425px) {
+  .dishes-cart-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3vh;
+  }
+}

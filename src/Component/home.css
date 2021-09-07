@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
+.home-container {
+  padding: 10vh 0vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 7vw auto 7vw;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  background-color: white;
+}
+.home-arrow-container {
+  text-align: center;
+  height: auto;
+}
+.home-left-arrow-btn {
+  font-size: 4vh;
+  border: none;
+  padding: 0.5vh 1vw;
+  border-radius: 20%;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+.home-left-arrow-btn:hover {
+  background-color: #27ae60;
+  color: white;
+}
+.home-right-arrow-btn {
+  font-size: 4vh;
+  border: none;
+  padding: 0.5vh 1vw;
+  border-radius: 20%;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+.home-right-arrow-btn:hover {
+  background-color: #27ae60;
+  color: white;
+}
+.home-img-container {
+  display: flex;
+  align-items: center;
+}
+.home-title {
+  text-align: center;
+  padding: 0vh 5vw;
+}
+.home-title > h1 {
+  font-size: 3rem;
+  font-family: "Nunito", sans-serif;
+  color: #192a56;
+  padding: 0;
+  margin: 0;
+}
+.home-title > h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  color: #27ae60;
+}
+
+.home-title > p {
+  padding: 0;
+  overflow: hidden;
+  color: rgb(56, 55, 55);
+  text-align: justify;
+}
+.home-title > button {
+  padding: 1.2vh 3vw;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  background: #192a56;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s;
+}
+.home-title > button:hover {
+  padding: 1.2vh 3vw;
+  background: #27ae60;
+  letter-spacing: 0.1rem;
+}
+.home-photo {
+  padding-top: 3.5vh;
+  width: 40vw;
+  height: 75vh;
+}
+.home-img {
+  width: 40vw;
+  height: 80vh;
+}
+
+/* responsive code start*/
+
+/* For Mobile */
+
+@media only screen and (max-width: 425px) {
+  .home-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .home-img-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .home-photo {
+    padding-top: 10vh;
+    text-align: center;
+    width: auto;
+    height: auto;
+  }
+  .home-img {
+    width: 80vw;
+    height: 60vh;
+  }
+  .home-left-arrow-btn {
+    display: none;
+  }
+  .home-right-arrow-btn {
+    padding: 0.5vh 4vw;
+  }
+  .home-title > h1 {
+    font-size: 2.2rem;
+  }
+  .home-title > h3 {
+    font-size: 1.2rem;
+  }
+}

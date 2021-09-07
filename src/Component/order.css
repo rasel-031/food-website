@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
+.order-container {
+  background-color: #eee;
+  height: auto;
+  font-family: "Nunito", sans-serif;
+  padding: 10vh 0vw;
+}
+.order-title {
+  text-align: center;
+}
+.order-title > h2 {
+  color: #27ae60;
+}
+.order-title > h1 {
+  margin-top: -2vh;
+  color: #192a56;
+  font-weight: bold;
+}
+.order-cart-container {
+  margin: 0vh 15vw;
+  background-color: white;
+  height: auto;
+  padding: 3vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2vw;
+  border: 1px solid rgba(209, 205, 205, 0.815);
+  border-radius: 5px;
+}
+.order-form > input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #eee;
+  font-family: "Courier New", Courier, monospace;
+}
+.order-form > input:hover {
+  border: 1px solid #27ae60;
+}
+.order-form > input:focus {
+  border: 1px solid #27ae60;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #eee;
+  resize: none;
+}
+textarea:hover {
+  border: 1px solid #27ae60;
+}
+textarea:focus {
+  border: 1px solid #27ae60;
+}
+.order-now-btn {
+  width: 40%;
+  padding: 1vh 2vw;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background-color: #192a56;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.order-now-btn:hover {
+  background-color: #27ae60;
+  color: white;
+  letter-spacing: 0.1rem;
+}
+
+/* For Mobile*/
+@media screen and (max-width: 768px) {
+  .order-now-btn {
+    width: 100%;
+  }
+}
+
+/* For Mobile*/
+@media screen and (max-width: 425px) {
+  .order-cart-container {
+    margin: 0vh 7vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2vw;
+  }
+  .order-now-btn {
+    width: 100%;
+  }
+}
